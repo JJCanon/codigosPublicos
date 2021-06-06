@@ -181,44 +181,9 @@ public class Grafo {
         for(int i = 0; i<calculos2.tiempos.length;i++){
             String a = ""+calculos2.tiempos[i];
             a=a.substring(0,a.indexOf(".")+3);
-            System.out.print("{"+calculos2.rutamenorTiempo[cont].coordenada.idDeNodo+","+a+"}");
+            System.out.print(" {"+calculos2.rutamenorTiempo[cont].coordenada.idDeNodo+","+a+"},");
             cont++;
         }
         System.out.print(" {0,0.00}]");
     }
 }
-
-/*
- public Nodo[] crearArregloN(ArrayList <Nodo> arrayList)
-    {
-        Nodo[] arreglo = new Nodo[arrayList.size()-1];
-        int cont =0;
-        for(int i=0;i<arrayList.size();i++)
-        {
-            if(i==0)continue;
-            else {
-                Nodo valor = arrayList.get(i);
-                arreglo[cont] = valor;
-                cont++;
-            }
-        }
-        return arreglo;
-    }
-
-    public double[] crearArregloD(ArrayList <Double> arrayList)
-    {
-        double[] arreglo = new double[arrayList.size()-1];
-        int cont= 0;
-        for(int i=0;i<arrayList.size();i++)
-        {
-            if(i==0)continue;
-            else
-            {
-                double valor = arrayList.get(i);
-                arreglo[cont]=valor;
-                cont++;
-            }
-        }
-        return arreglo;
-    }
- */
